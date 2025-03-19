@@ -23,7 +23,7 @@ Follow these steps to run the project locally:
 
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/ahmetyusufer/FilmFinder.git
+   git clone https://github.com/ahmetyusufer/MovieLog.git
    cd film-finder
    ```
 2. Install dependencies:  
