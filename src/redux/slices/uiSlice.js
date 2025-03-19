@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const uiSlice = createSlice({
   name: "uiSlice",
   initialState: {
-    apiKey: "59f36d959e7ded586d6e1e21fae581fa",
+    apiKey: "YOUR_TMDB_APİ_KEY",
     isOpen: true,
     selectedId: "",
     starClickedNumber: 0,
