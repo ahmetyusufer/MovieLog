@@ -2,9 +2,7 @@
 
 # MovieLog  
 
-MovieLog is a React application that allows you to save the movies you've watched, rate them, and view IMDb ratings. With this project, you can keep track of the movies you've watched and the ratings you've given them.  
-
-This project is part of a course I took, but I improved the design and restructured it by using Redux instead of props.  
+MovieLog is a React application that allows you to save the movies you've watched, rate them, and view IMDb ratings. With this project, you can keep track of the movies you've watched and the ratings you've given them. 
 
 ## 🚀 Features  
 - Movie search functionality  
