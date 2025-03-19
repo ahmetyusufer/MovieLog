@@ -1,4 +1,4 @@
-![Promotional image](../assets/movieLog.png)
+![Promotional image](src/assets/movieLog.png)
 
 # MovieLog  
 
