@@ -1,3 +1,5 @@
+![Promotional image](assets/movieLog.png)
+
 # MovieLog  
 
 Film Finder is a React application that allows you to save the movies you've watched, rate them, and view IMDb ratings. With this project, you can keep track of the movies you've watched and the ratings you've given them.  
