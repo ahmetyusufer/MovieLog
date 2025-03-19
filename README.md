@@ -2,7 +2,7 @@
 
 # MovieLog  
 
-Film Finder is a React application that allows you to save the movies you've watched, rate them, and view IMDb ratings. With this project, you can keep track of the movies you've watched and the ratings you've given them.  
+MovieLog is a React application that allows you to save the movies you've watched, rate them, and view IMDb ratings. With this project, you can keep track of the movies you've watched and the ratings you've given them.  
 
 This project is part of a course I took, but I improved the design and restructured it by using Redux instead of props.  
 
@@ -13,7 +13,7 @@ This project is part of a course I took, but I improved the design and restructu
 - Saving and listing watched movies  
 
 ## 📦 Technologies Used  
-Film Finder utilizes the following technologies:  
+MovieLog utilizes the following technologies:  
 
 - **React** (18.3.1)  
 - **Redux Toolkit** (@reduxjs/toolkit 2.6.0)  
@@ -26,7 +26,7 @@ Follow these steps to run the project locally:
 1. Clone the repository:  
    ```sh
    git clone https://github.com/ahmetyusufer/MovieLog.git
-   cd film-finder
+   cd MovieLog
    ```
 2. Install dependencies:  
    ```sh
