@@ -20,7 +20,6 @@ export function useCalculateRuntime() {
       !movie.runtime || movie.runtime === "N/A" ? 0 : parseInt(movie.runtime)
     )
   );
-  console.log(avgRuntime);
 
   return {
     avgImdbRating,

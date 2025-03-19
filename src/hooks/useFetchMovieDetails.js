@@ -10,7 +10,7 @@ function useFetchMovieDetails() {
 
   return useEffect(() => {
     async function fetchMovieDetails() {
-      dispatch(setLoader(true));
+      dispatch(setLoader({ movieDetails: true }));
       const response = await fetch(
         `https://api.themoviedb.org/3/movie/${selectedId}?api_key=${apiKey}`
       );
@@ -19,7 +19,7 @@ function useFetchMovieDetails() {
 
       dispatch(setCurrentMovieDetails(data));
 
-      dispatch(setLoader(false));
+      dispatch(setLoader({ movieDetails: false }));
     }
     fetchMovieDetails();
   }, [dispatch, apiKey, selectedId]);

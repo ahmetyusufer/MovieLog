@@ -6,11 +6,11 @@ function useTitleUpdate() {
 
   return useEffect(() => {
     if (currentMovieDetails) {
-      document.title = "Movie | " + currentMovieDetails.Title;
+      document.title = "Movie | " + currentMovieDetails.title;
     }
 
     return function () {
-      document.title = "usePopcorn";
+      document.title = "MovieLog";
     };
   }, [currentMovieDetails]);
 }

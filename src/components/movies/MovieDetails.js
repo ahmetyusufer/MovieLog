@@ -18,7 +18,7 @@ function MovieDetails() {
 
   return (
     <div className="details">
-      {loader ? (
+      {loader.movieDetails ? (
         <Loader></Loader>
       ) : (
         <>

@@ -6,7 +6,6 @@ import {
   setTotalResult,
 } from "../redux/slices/moviesSlice";
 import { useSelector, useDispatch } from "react-redux";
-import Loader from "../components/ui/Loader";
 
 function useFetchMovies() {
   const dispatch = useDispatch();
@@ -19,7 +18,7 @@ function useFetchMovies() {
     async function fetchMovie() {
       try {
         dispatch(setError(""));
-        dispatch(setLoader(true));
+        dispatch(setLoader({ movie: true }));
         const response = await fetch(
           `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`,
           { signal: controller.signal }
@@ -30,19 +29,24 @@ function useFetchMovies() {
 
         const data = await response.json();
 
-        const moviesWithImages = data.results.filter(
-          (movie) => movie.backdrop_path !== null && movie.poster_path !== null
+        const moviesData = data.results.filter(
+          (movie) =>
+            movie.backdrop_path !== null &&
+            movie.poster_path !== null &&
+            movie.vote_average !== 0 &&
+            movie.vote_count !== 0 &&
+            movie.popularity > 1
         );
-
-        dispatch(setTotalResult(moviesWithImages.length));
-        dispatch(setMovies(moviesWithImages));
+        console.log(moviesData);
+        dispatch(setTotalResult(moviesData.length));
+        dispatch(setMovies(moviesData));
       } catch (error) {
         if (error.name === "AbortError") {
         } else {
           dispatch(setError("Check Your Internet Connection..."));
         }
       } finally {
-        dispatch(setLoader(false));
+        dispatch(setLoader({ movie: false }));
       }
     }
 

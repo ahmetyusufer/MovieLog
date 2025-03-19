@@ -7,7 +7,6 @@ import { converMinuteToHours } from "../../helpers/converts";
 function WatchedMovieItem({ watchedMovie }) {
   const dispatch = useDispatch();
   const handleCloseMovie = useCloseMovie({ watchedMovie });
-  console.log(watchedMovie.realImdb);
 
   return (
     <div className="li-relative">
@@ -26,11 +25,11 @@ function WatchedMovieItem({ watchedMovie }) {
           <h3>{watchedMovie.title}</h3>
           <div className="watchedSubElements">
             <p>
-              <span>İmdb: ⭐️</span>
+              <span>IMDB: ⭐️</span>
               <span>{parseFloat(watchedMovie.realImdb).toFixed(1)}</span>
             </p>
             <p>
-              <span>🖲️</span>
+              <span>👏</span>
               <span>{watchedMovie.userRating.toFixed(0)}</span>
             </p>
             <p>

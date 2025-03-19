@@ -8,7 +8,7 @@ export function MovieSection() {
   const { loader, error } = useSelector((state) => state.moviesSlice);
 
   if (error) return <HandleError />;
-  if (loader) return <Loader />;
+  if (loader.movie) return <Loader />;
   return <MovieList />;
 }
 

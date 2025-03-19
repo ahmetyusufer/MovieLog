@@ -6,7 +6,10 @@ export const moviesSlice = createSlice({
     query: "",
     movies: [],
     currentMovieDetails: [],
-    loader: false,
+    loader: {
+      movie: false,
+      movieDetails: false,
+    },
     error: "",
     watched: JSON.parse(localStorage.getItem("watched")) || [],
     totalResult: "",
@@ -24,7 +27,7 @@ export const moviesSlice = createSlice({
       state.currentMovieDetails = action.payload;
     },
     setLoader: (state, action) => {
-      state.loader = action.payload;
+      state.loader = { ...state.loader, ...action.payload };
     },
     setError: (state, action) => {
       state.error = action.payload;

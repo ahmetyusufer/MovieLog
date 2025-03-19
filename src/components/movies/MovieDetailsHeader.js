@@ -1,6 +1,5 @@
 import { setIsOpen } from "../../redux/slices/uiSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
 import {
   converMinuteToHours,
   convertToSpace,
@@ -38,7 +37,7 @@ function MovieDetailsHeader() {
         <p>
           <span>⭐</span>
           {imdbRating === null
-            ? "Loading..."
+            ? "loading..."
             : imdbRating !== "N/A"
             ? `IMDB Rating: ${imdbRating}`
             : currentMovieDetails.vote_average}
