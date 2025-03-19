@@ -9,7 +9,7 @@ export function useFetchIMDBRating(imdbID) {
     const fetchRating = async () => {
       try {
         const response = await fetch(
-          `https://www.omdbapi.com/?i=${imdbID}&apikey=efe41af1`
+          `https://www.omdbapi.com/?i=${imdbID}&apikey={YOUR_OMDBAPİ_KEY}`
         );
         const data = await response.json();
         if (data.imdbRating) {
