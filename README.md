@@ -24,7 +24,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 
 1. Depoyu klonlayın:
    ```sh
-   git clone <repo-link>
+   git clone https://github.com/ahmetyusufer/FilmFinder.git
    cd film-finder
    ```
 2. Bağımlılıkları yükleyin:
