@@ -1,39 +1,37 @@
-# Film Finder
+# Film Finder  
 
-Film Finder, izlediğiniz filmleri kaydetmenizi, onlara puan vermenizi ve IMDb puanlarını görmenizi sağlayan bir React uygulamasıdır. Bu proje sayesinde hangi filmleri izlediğinizi ve onlara kaç puan verdiğinizi takip edebilirsiniz.
+Film Finder is a React application that allows you to save the movies you've watched, rate them, and view IMDb ratings. With this project, you can keep track of the movies you've watched and the ratings you've given them.  
 
-Bu proje, eğitimini aldığım bir kursa ait olup, ben tasarımını geliştirdim ve props yerine Redux kullanarak yeniden yapılandırdım.
+This project is part of a course I took, but I improved the design and restructured it by using Redux instead of props.  
 
-## 🚀 Özellikler
-- Film arama özelliği
-- Gerçek IMDb puanlarını görüntüleme
-- Filmlere kendi puanınızı verme
-- İzlediğiniz filmleri kaydetme ve listeleme
+## 🚀 Features  
+- Movie search functionality  
+- Viewing real IMDb ratings  
+- Adding your own ratings to movies  
+- Saving and listing watched movies  
 
-## 📦 Kullanılan Teknolojiler
-Film Finder aşağıdaki teknolojileri kullanmaktadır:
+## 📦 Technologies Used  
+Film Finder utilizes the following technologies:  
 
-- **React** (18.3.1)
-- **Redux Toolkit** (@reduxjs/toolkit 2.6.0)
-- **React-Redux** (9.2.0)
+- **React** (18.3.1)  
+- **Redux Toolkit** (@reduxjs/toolkit 2.6.0)  
+- **React-Redux** (9.2.0)  
 - **Redux** (5.0.1)
-- **React Scripts** (5.0.1)
 
-## 🔧 Kurulum ve Çalıştırma
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
+## 🔧 Installation and Setup  
+Follow these steps to run the project locally:  
 
-1. Depoyu klonlayın:
+1. Clone the repository:  
    ```sh
    git clone https://github.com/ahmetyusufer/FilmFinder.git
    cd film-finder
    ```
-2. Bağımlılıkları yükleyin:
+2. Install dependencies:  
    ```sh
    npm install
    ```
-3. Uygulamayı başlatın:
+3. Start the application:  
    ```sh
    npm run start
    ```
-4. Tarayıcınızda `http://localhost:3000` adresinden erişebilirsiniz.
-
+4. Access it in your browser at `http://localhost:3000`.  
